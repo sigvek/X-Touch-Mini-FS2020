@@ -10,11 +10,11 @@
       "index": 1,
       "event_up": {
         "type": "condition-file",
-        "event": "Functions/A320/mfd-range-up.jinja2"
+        "event": "Functions/B787/mfd-range-down.jinja2"
       },
       "event_down": {
         "type": "condition-file",
-        "event": "Functions/A320/mfd-range-down.jinja2"
+        "event": "Functions/B787/mfd-range-up.jinja2"
       }
     },
     {
@@ -83,13 +83,13 @@
     },
     {
       "index": 7,
-      "event_up": "ELEV_TRIM_UP",
-      "event_down": "ELEV_TRIM_DN"
+      "event_up": "MobiFlight.KEY_GPS_ZOOMIN_BUTTON",
+      "event_down": "MobiFlight.KEY_GPS_ZOOMOUT_BUTTON"
     },
     {
       "index": 8,
-      "event_up": "VIEW_MODE",
-      "event_down": "PANEL_4"
+      "event_up": "MobiFlight.RNG_Zoom",
+      "event_down": "MobiFlight.RNG_Dezoom"
     }
   ],
   "buttons": [

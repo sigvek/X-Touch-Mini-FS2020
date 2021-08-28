@@ -1,0 +1,7 @@
+{% if data.get_global_variable('MFD_RANGE') == 10 %}
+    {{ data.trigger_event('MobiFlight.NDB_RANGE_DEFAULT_4', 1) }}
+    {{ data.set_global_variable('MFD_RANGE', 160) }}
+{% else %}
+    {{ data.trigger_event('MobiFlight.NDB_RANGE_DEFAULT_4', 1) }}
+    {{ data.set_global_variable('MFD_RANGE', 10) }}
+{% endif %}

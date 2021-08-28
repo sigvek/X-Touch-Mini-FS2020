@@ -1,0 +1,7 @@
+{% if data.get_global_variable('AUTOPILOT SPEED SLOT INDEX') == 1 %}
+    {{ data.trigger_event('MobiFlight.AP_SPEED_INTERVENTION_ACTIVE', 0) }}
+    {{ data.set_global_variable('SPEED_SLOT_INDEX_SET', 2) }}
+{% else %}
+    {{ data.trigger_event('MobiFlight.AP_SPEED_INTERVENTION_ACTIVE', 1) }}
+    {{ data.set_global_variable('SPEED_SLOT_INDEX_SET', 1) }}
+{% endif %}
